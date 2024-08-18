@@ -10,7 +10,7 @@
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
+
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
@@ -236,16 +236,16 @@ img {
 /* ===== ABOUT =====*/
 .about__content {
   display: flex;
-  align-items: flex-start; /* Align items to the start */
+  align-items: flex-start; 
 }
 .about__container {
   row-gap: 2rem;
-  text-align: left; /* Changed to left */
+  text-align: left; 
   justify-items: left;
 }
 .about__subtitle {
   margin-bottom: var(--mb-2);
-  text-align: left; /* Ensure the text alignment is left */
+  text-align: left; 
 }
 .about__img {
   justify-self:center;
@@ -254,9 +254,9 @@ img {
 }
 
 .about__text {
-  text-align: left; /* Ensure the text alignment is left */
+  text-align: left; 
 }
-/* Define keyframes for the animation */
+
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -268,13 +268,13 @@ img {
   }
 }
 
-/* Apply the animation to the element */
+
 .about__animation {
-  width: 50px; /* Adjust size as needed */
+  width: 50px; 
   height: 600px;
-  background-color: var(--first-color); /* Change to your desired color or replace with an image */
-  margin-right: 1rem; /* Space between the animation and the paragraph */
-  animation: slideIn 1s ease-out; /* Apply the animation */
+  background-color: var(--first-color); 
+  margin-right: 1rem; 
+  animation: slideIn 1s ease-out;
 }
 
 /* ===== SKILLS =====*/
