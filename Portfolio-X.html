@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lucas Lander - Front-end Web Developer Portfolio">
+    <title>Lucas Lander | Web Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="CSS/Portfolio-X.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="#home" aria-label="Lucas Lander">LL</a>
+            </div>
+            
+            <nav class="nav" id="primary-navigation">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link active">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="theme-toggle">
+                <label class="switch" for="theme-switch">
+                    <input id="theme-switch" type="checkbox" class="switch__input">
+                    <span class="switch__slider"></span>
+                </label>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">Front-end Web Developer</h1>
+                    <h2 class="hero__name">Lucas Lander</h2>
+                    <p class="hero__description">
+                        I create engaging, responsive websites with clean code and modern design.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#portfolio" class="btn btn--primary">View My Work</a>
+                        <a href="#contact" class="btn btn--secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="Images/HeadshotWB.jpeg" alt="Lucas Lander" width="400" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section__title reveal fade-bottom">About Me</h2>
+            
+            <div class="about__content">
+                <div class="about__text reveal fade-right">
+                    <p>
+                        Hi, I'm Lucas Lander! I'm a 23-year-old web developer born in Washington, DC, and currently living in Gaithersburg, Maryland. I chose web development as my career because of my fascination with creating functional, visually appealing websites and solving complex problems through code.
+                    </p>
+                    <p>
+                        Over the past year, I've dedicated myself to studying and practicing web development, primarily through Codecademy, where I've built a solid foundation in HTML, CSS, JavaScript, and more. I've always approached my work with a focus on perfection, ensuring that I can handle any challenge that comes my way.
+                    </p>
+                    <p>
+                        Web development is more than just a career for me—it's a passion, and I'm excited to continue growing and creating in this ever-evolving field.
+                    </p>
+                </div>
+                
+                <div class="about__details reveal fade-left">
+                    <div class="details__item glass-effect">
+                        <h3 class="details__title">Contact Info</h3>
+                        <ul class="details__list">
+                            <li class="details__list-item">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <a href="mailto:Lucaslander877@gmail.com">Lucaslander877@gmail.com</a>
+                            </li>
+                            <li class="details__list-item">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <a href="tel:1-240-838-0424">1-240-838-0424</a>
+                            </li>
+                            <li class="details__list-item">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <span>Gaithersburg, Maryland, USA</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="social glass-effect">
+                        <h3 class="social__title">Connect With Me</h3>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="https://github.com/lucaslander" class="social__link" aria-label="GitHub">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://linkedin.com/in/lucas-lander" class="social__link" aria-label="LinkedIn">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://instagram.com/lucas.lander" class="social__link" aria-label="Instagram">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section: This section showcases the services offered, including website creation, debugging, website enhancement, and collaborative work -->
+    <section class="services section" id="services">
+        <div class="container">
+            <h2 class="section__title reveal fade-bottom">Services</h2>
+            
+            <div class="services__grid">
+                <div class="service-card reveal fade-bottom">
+                    <div class="service-card__icon">
+                        <ion-icon name="desktop-outline"></ion-icon>
+                    </div>
+                    <h3 class="service-card__title">Website Creation</h3>
+                    <p class="service-card__description">
+                        Custom website design and development tailored to your specific needs.
+                    </p>
+                </div>
+                
+                <div class="service-card reveal fade-bottom">
+                    <div class="service-card__icon">
+                        <ion-icon name="construct-outline"></ion-icon>
+                    </div>
+                    <h3 class="service-card__title">Debugging</h3>
+                    <p class="service-card__description">
+                        Identifying and fixing issues in existing websites to improve performance.
+                    </p>
+                </div>
+                
+                <div class="service-card reveal fade-bottom">
+                    <div class="service-card__icon">
+                        <ion-icon name="construct-outline"></ion-icon>
+                    </div>
+                    <h3 class="service-card__title">Website Enhancement</h3>
+                    <p class="service-card__description">
+                        Improving and updating existing sites with modern features and designs.
+                    </p>
+                </div>
+                
+                <div class="service-card reveal fade-bottom">
+                    <div class="service-card__icon">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                    <h3 class="service-card__title">Collaborative Work</h3>
+                    <p class="service-card__description">
+                        Collaborating with teams to design, develop, and optimize web solutions, including API integrations and workflow enhancements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section__title reveal fade-bottom">My Skills</h2>
+            
+            <div class="skills__content">
+                <div class="skills__technical reveal fade-right">
+                    <h3 class="skills__subtitle">Technical Skills</h3>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-bar__header">
+                            <span class="skill-bar__title">HTML & CSS</span>
+                            <span class="skill-bar__percentage">90%</span>
+                        </div>
+                        <div class="skill-bar__track">
+                            <div class="skill-bar__fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-bar__header">
+                            <span class="skill-bar__title">JavaScript</span>
+                            <span class="skill-bar__percentage">80%</span>
+                        </div>
+                        <div class="skill-bar__track">
+                            <div class="skill-bar__fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-bar__header">
+                            <span class="skill-bar__title">Responsive Design</span>
+                            <span class="skill-bar__percentage">85%</span>
+                        </div>
+                        <div class="skill-bar__track">
+                            <div class="skill-bar__fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-bar__header">
+                            <span class="skill-bar__title">WordPress</span>
+                            <span class="skill-bar__percentage">50%</span>
+                        </div>
+                        <div class="skill-bar__track">
+                            <div class="skill-bar__fill" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills__other reveal fade-left">
+                    <h3 class="skills__subtitle">Additional Skills</h3>
+                    
+                    <div class="skills__tags">
+                        <span class="skills__tag">UI/UX Design</span>
+                        <span class="skills__tag">Git Bash & GitHub</span>
+                        <span class="skills__tag">Problem Solving</span>
+                        <span class="skills__tag">Teamwork</span>
+                        <span class="skills__tag">Communication</span>
+                        <span class="skills__tag">Time Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <h2 class="section__title reveal fade-bottom">My Work</h2>
+            
+            <div class="portfolio__filters">
+                <button class="portfolio__filter active" data-filter="all">All</button>
+                <button class="portfolio__filter" data-filter="web-design">Web Design</button>
+                <button class="portfolio__filter" data-filter="apps">Applications</button>
+                <button class="portfolio__filter" data-filter="development">Development</button>
+            </div>
+            
+            <div class="portfolio__grid">
+                <div class="portfolio__item reveal fade-bottom" data-category="development">
+                    <div class="portfolio__image">
+                        <img src="Images/coming-soon-2579123_1920.jpg" alt="Finance project">
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Finance Project</h3>
+                            <p class="portfolio__category">Web Development</p>
+                            <a href="#" class="portfolio__link" aria-label="View Project">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item reveal fade-bottom" data-category="development">
+                    <div class="portfolio__image">
+                        <img src="Images/coming-soon-2579123_1920.jpg" alt="Horizon project">
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Project</h3>
+                            <p class="portfolio__category">Web Development</p>
+                            <a href="#" class="portfolio__link" aria-label="View Project">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item reveal fade-bottom" data-category="web-design">
+                    <div class="portfolio__image">
+                        <img src="Images/coming-soon-2579123_1920.jpg" alt="Fund project">
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Fund</h3>
+                            <p class="portfolio__category">Web Design</p>
+                            <a href="#" class="portfolio__link" aria-label="View Project">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item reveal fade-bottom" data-category="apps">
+                    <div class="portfolio__image">
+                        <img src="Images/coming-soon-2579123_1920.jpg" alt="Brawlhalla app">
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Project</h3>
+                            <p class="portfolio__category">Web Development</p>
+                            <a href="#" class="portfolio__link" aria-label="View Project">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item reveal fade-bottom" data-category="web-design">
+                    <div class="portfolio__image">
+                        <img src="Images/coming-soon-2579123_1920.jpg" alt="Spectrum project">
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">project</h3>
+                            <p class="portfolio__category">Web Design</p>
+                            <a href="#" class="portfolio__link" aria-label="View Project">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item reveal fade-bottom" data-category="development">
+                    <div class="portfolio__image">
+                        <img src="Images/coming-soon-2579123_1920.jpg" alt="Momentum project">
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Project</h3>
+                            <p class="portfolio__category">Web Development</p>
+                            <a href="#" class="portfolio__link" aria-label="View Project">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section__title reveal fade-bottom">Contact Me</h2>
+            
+            <div class="contact__content">
+                <div class="contact__info-container">
+                    <div class="contact__info glass-effect">
+                        <h3 class="contact__subtitle">Get In Touch</h3>
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <ion-icon name="mail-outline" class="icon"></ion-icon>
+                                <a href="mailto:Lucaslander877@gmail.com">Lucaslander877@gmail.com</a>
+                            </li>
+                            <li class="contact__item">
+                                <ion-icon name="call-outline" class="icon"></ion-icon>
+                                <a href="tel:1-240-838-0424">1-240-838-0424</a>
+                            </li>
+                            <li class="contact__item">
+                                <ion-icon name="location-outline" class="icon"></ion-icon>
+                                <span>Gaithersburg, Maryland, USA</span>
+                            </li>
+                        </ul>
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49579.78550669!2d-77.2421193!3d39.1434506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b62cd09be91e1d%3A0xd1ea15e62be8b0b7!2sGaithersburg%2C%20MD!5e0!3m2!1sen!2sus!4v1657123456789!5m2!1sen!2sus" 
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade" class="contact__map"></iframe>
+                    </div>
+                    
+                    <form class="form" action="#" method="post">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Name</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form__input" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea id="message" name="message" class="form__input form__textarea" required></textarea>
+                        </div>
+                        
+                        <div class="form__submit">
+                            <button type="submit" class="btn btn--primary">
+                                Send Message
+                                <ion-icon name="paper-plane-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3 class="footer__name">Lucas Lander</h3>
+                    <p class="footer__tagline">Front-end Web Developer</p>
+                </div>
+                
+                <div class="footer__social">
+                    <a href="https://github.com/lucaslander" class="footer__social-link" aria-label="GitHub">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://linkedin.com/in/lucas-lander" class="footer__social-link" aria-label="LinkedIn">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="https://instagram.com/lucas.lander" class="footer__social-link" aria-label="Instagram">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Lucas Lander. All rights reserved.</p>
+                <p>Designed with <ion-icon name="heart"></ion-icon> by Lucas Lander</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+<!-- JavaScript -->
+<script src="JavaScript/Portfolio-X.js"></script>
+</body>
+</html>
